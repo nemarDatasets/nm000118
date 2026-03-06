@@ -1,0 +1,40 @@
+{
+	"TaskName": "ssvep",
+	"Manufacturer": "BioSemi",
+	"PowerLineFrequency": 50.0,
+	"SamplingFrequency": 256.0,
+	"SoftwareFilters": {
+		"preprocessing_steps": {
+			"Description": "downsampling, bandpass filtering"
+		}
+	},
+	"RecordingDuration": 853.58984375,
+	"RecordingType": "continuous",
+	"EEGReference": "CMS/DRL",
+	"EEGGround": "n/a",
+	"EEGPlacementScheme": "10-20 system",
+	"EEGChannelCount": 8,
+	"EOGChannelCount": 0,
+	"ECGChannelCount": 0,
+	"EMGChannelCount": 0,
+	"TriggerChannelCount": 0,
+	"ManufacturersModelName": "Biosemi ActiveTwo",
+	"HardwareFilters": {
+		"Bandpass": {
+			"low_cutoff_hz": 6.0,
+			"high_cutoff_hz": 80.0,
+			"Type": "IIR"
+		}
+	},
+	"TaskDescription": "12-class SSVEP target identification task with joint frequency and phase coding Trial duration: 4.0s, stimulus frequencies: [9.25, 9.75, 10.25, 10.75, 11.25, 11.75, 12.25, 12.75, 13.25, 13.75, 14.25, 14.75] Hz.",
+	"Instructions": "Subjects were asked to gaze at one of the visual stimuli indicated by the stimulus program in a random order for 4s. At the beginning of each trial, a red square appeared for 1s at the position of the target stimulus. Subjects were asked to shift their gaze to the target within the same 1s duration. After that, all stimuli started to flicker simultaneously for 4s.",
+	"InstitutionName": "University of California San Diego",
+	"InstitutionAddress": "US",
+	"InstitutionalDepartmentName": "Swartz Center for Computational Neuroscience, Institute for Neural Computation; Center for Advanced Neurological Engineering, Institute of Engineering in Medicine",
+	"CapManufacturer": "n/a",
+	"CapManufacturersModelName": "n/a",
+	"SubjectArtefactDescription": "n/a",
+	"DeviceSerialNumber": "n/a",
+	"Description": "A comparison study of canonical correlation analysis based methods for detecting steady-state visual evoked potentials. This study performed a comparison of existing CCA-based SSVEP detection methods using a 12-class SSVEP dataset recorded from 10 subjects in a simulated online BCI experiment.",
+	"MISCChannelCount": 0
+}

@@ -1,0 +1,53 @@
+{
+	"Name": "Nakanishi2015",
+	"BIDSVersion": "1.9.0",
+	"HEDVersion": "8.4.0",
+	"DatasetType": "derivative",
+	"License": "Unknown",
+	"Authors": [
+		"Masaki Nakanishi",
+		"Yijun Wang",
+		"Yu-Te Wang",
+		"Tzyy-Ping Jung"
+	],
+	"Funding": [
+		"Swartz Foundation gift fund",
+		"U.S. Office of Naval Research (N00014-08-1215)",
+		"Army Research Office (W911NF-09-1-0510)",
+		"Army Research Laboratory (W911NF-10-2-0022)",
+		"DARPA (USDI D11PC20183)",
+		"UC Proof of Concept Grant Award (269228)",
+		"NIH Grant (1R21EY025056-01)",
+		"Recruitment Program for Young Professionals"
+	],
+	"EthicsApprovals": [
+		"Human Research Protections Program of the University of California San Diego"
+	],
+	"ReferencesAndLinks": [
+		"https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
+	],
+	"DatasetDOI": "doi:10.1371/journal.pone.0140703",
+	"GeneratedBy": [
+		{
+			"CodeURL": "https://github.com/NeuroTechX/moabb",
+			"Name": "moabb",
+			"Description": "Mother of All BCI Benchmarks",
+			"Version": "1.4.3"
+		}
+	],
+	"SourceDatasets": [
+		{
+			"DOI": "10.1371/journal.pone.0140703",
+			"URL": "https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
+		}
+	],
+	"Keywords": [
+		"SSVEP",
+		"BCI",
+		"CCA",
+		"canonical correlation analysis",
+		"brain-computer interface",
+		"steady-state visual evoked potentials"
+	],
+	"PublicationYear": 2015
+}
