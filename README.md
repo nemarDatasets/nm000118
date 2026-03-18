@@ -1,0 +1,224 @@
+# SSVEP Nakanishi 2015 dataset
+
+SSVEP Nakanishi 2015 dataset.
+
+## Dataset Overview
+
+- **Code**: Nakanishi2015
+- **Paradigm**: ssvep
+- **DOI**: 10.1371/journal.pone.0140703
+- **Subjects**: 9
+- **Sessions per subject**: 1
+- **Events**: 9.25=1, 11.25=2, 13.25=3, 9.75=4, 11.75=5, 13.75=6, 10.25=7, 12.25=8, 14.25=9, 10.75=10, 12.75=11, 14.75=12
+- **Trial interval**: [0.15, 4.3] s
+- **File format**: mat
+- **Data preprocessed**: True
+
+## Acquisition
+
+- **Sampling rate**: 256.0 Hz
+- **Number of channels**: 8
+- **Channel types**: eeg=8
+- **Channel names**: PO7, PO3, POz, PO4, PO8, O1, Oz, O2
+- **Montage**: standard_1020
+- **Hardware**: Biosemi ActiveTwo
+- **Reference**: CMS/DRL
+- **Sensor type**: EEG
+- **Line frequency**: 60.0 Hz
+
+## Participants
+
+- **Number of subjects**: 9
+- **Health status**: healthy
+- **Age**: mean=28.0
+- **Gender distribution**: male=9, female=1
+- **BCI experience**: not specified
+
+## Experimental Protocol
+
+- **Paradigm**: ssvep
+- **Number of classes**: 12
+- **Class labels**: 9.25, 11.25, 13.25, 9.75, 11.75, 13.75, 10.25, 12.25, 14.25, 10.75, 12.75, 14.75
+- **Trial duration**: 4.0 s
+- **Study design**: 12-class SSVEP target identification task with joint frequency and phase coding
+- **Feedback type**: none
+- **Stimulus type**: flickering
+- **Stimulus modalities**: visual
+- **Primary modality**: visual
+- **Synchronicity**: synchronous
+- **Mode**: offline
+- **Training/test split**: False
+- **Instructions**: Subjects were asked to gaze at one of the visual stimuli indicated by the stimulus program in a random order for 4s. At the beginning of each trial, a red square appeared for 1s at the position of the target stimulus. Subjects were asked to shift their gaze to the target within the same 1s duration. After that, all stimuli started to flicker simultaneously for 4s.
+- **Stimulus presentation**: SoftwareName=MATLAB with Psychophysics Toolbox, monitor=ASUS VG278 27-inch LCD, refresh_rate=60Hz, resolution=1280x800 pixels, stimulus_size=6x6 cm each, viewing_distance=60cm, arrangement=4x3 matrix virtual keypad
+
+## HED Event Annotations
+
+Schema: HED 8.4.0 | Browse: https://www.hedtags.org/hed-schema-browser
+
+```
+  9.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/9_25
+
+  11.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/11_25
+
+  13.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/13_25
+
+  9.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/9_75
+
+  11.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/11_75
+
+  13.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/13_75
+
+  10.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/10_25
+
+  12.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/12_25
+
+  14.25
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/14_25
+
+  10.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/10_75
+
+  12.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/12_75
+
+  14.75
+    ├─ Sensory-event
+    ├─ Experimental-stimulus
+    ├─ Visual-presentation
+    └─ Label/14_75
+
+```
+## Paradigm-Specific Parameters
+
+- **Detected paradigm**: ssvep
+- **Stimulus frequencies**: [9.25, 9.75, 10.25, 10.75, 11.25, 11.75, 12.25, 12.75, 13.25, 13.75, 14.25, 14.75] Hz
+- **Frequency resolution**: 0.5 Hz
+- **Code type**: joint frequency and phase coding
+- **Number of targets**: 12
+
+## Data Structure
+
+- **Trials**: 180
+- **Blocks per session**: 15
+- **Trials context**: 15 blocks x 12 trials per block = 180 trials total per subject
+
+## Preprocessing
+
+- **Preprocessing applied**: True
+- **Steps**: downsampling, bandpass filtering
+- **Bandpass filter**: {'low_cutoff_hz': 6.0, 'high_cutoff_hz': 80.0}
+- **Filter type**: IIR
+- **Downsampled to**: 256.0 Hz
+- **Epoch window**: [0.135, 4.135]
+- **Notes**: Zero-phase forward and reverse IIR filtering was implemented using the filtfilt() function in MATLAB. Data epochs were extracted with a 135-ms latency delay considering the visual system delay.
+
+## Signal Processing
+
+- **Classifiers**: CCA, IT-CCA, MwayCCA, L1-MCCA, MsetCCA, CACC, Combination Method
+- **Feature extraction**: CCA, canonical correlation
+- **Spatial filters**: CCA
+
+## Cross-Validation
+
+- **Method**: leave-one-block-out
+- **Folds**: 15
+- **Evaluation type**: cross_validation
+
+## Performance (Original Study)
+
+- **Accuracy**: 92.78%
+- **Itr**: 91.68 bits/min
+- **R Square**: 0.87
+- **Combination Method Accuracy 1S**: 92.78
+- **Combination Method Itr 1S**: 91.68
+- **Standard Cca Accuracy 1S**: 55.0
+- **Standard Cca Itr 2S**: 50.4
+
+## BCI Application
+
+- **Applications**: communication
+- **Environment**: laboratory
+- **Online feedback**: False
+
+## Tags
+
+- **Pathology**: Healthy
+- **Modality**: Visual
+- **Type**: Research
+
+## Documentation
+
+- **Description**: A comparison study of canonical correlation analysis based methods for detecting steady-state visual evoked potentials. This study performed a comparison of existing CCA-based SSVEP detection methods using a 12-class SSVEP dataset recorded from 10 subjects in a simulated online BCI experiment.
+- **DOI**: 10.1371/journal.pone.0140703
+- **License**: Unknown
+- **Investigators**: Masaki Nakanishi, Yijun Wang, Yu-Te Wang, Tzyy-Ping Jung
+- **Contact**: wangyj@semi.ac.cn
+- **Institution**: University of California San Diego
+- **Department**: Swartz Center for Computational Neuroscience, Institute for Neural Computation; Center for Advanced Neurological Engineering, Institute of Engineering in Medicine
+- **Country**: US
+- **Repository**: Github
+- **Data URL**: https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/
+- **Publication year**: 2015
+- **Funding**: Swartz Foundation gift fund; U.S. Office of Naval Research (N00014-08-1215); Army Research Office (W911NF-09-1-0510); Army Research Laboratory (W911NF-10-2-0022); DARPA (USDI D11PC20183); UC Proof of Concept Grant Award (269228); NIH Grant (1R21EY025056-01); Recruitment Program for Young Professionals
+- **Ethics approval**: Human Research Protections Program of the University of California San Diego
+- **Keywords**: SSVEP, BCI, CCA, canonical correlation analysis, brain-computer interface, steady-state visual evoked potentials
+
+## Abstract
+
+Canonical correlation analysis (CCA) has been widely used in the detection of the steady-state visual evoked potentials (SSVEPs) in brain-computer interfaces (BCIs). The standard CCA method, which uses sinusoidal signals as reference signals, was first proposed for SSVEP detection without calibration. However, the detection performance can be deteriorated by the interference from the spontaneous EEG activities. Recently, various extended methods have been developed to incorporate individual EEG calibration data in CCA to improve the detection performance. Although advantages of the extended CCA methods have been demonstrated in separate studies, a comprehensive comparison between these methods is still missing. This study performed a comparison of the existing CCA-based SSVEP detection methods using a 12-class SSVEP dataset recorded from 10 subjects in a simulated online BCI experiment. Classification accuracy and information transfer rate (ITR) were used for performance evaluation. The results suggest that individual calibration data can significantly improve the detection performance. Furthermore, the results showed that the combination method based on the standard CCA and the individual template based CCA (IT-CCA) achieved the highest performance.
+
+## Methodology
+
+A simulated online BCI experiment was conducted with 10 subjects. Each subject completed 15 blocks, with each block containing 12 trials (one for each of the 12 targets). Visual stimuli were presented as a 4x3 matrix on a 27-inch LCD monitor at 60Hz refresh rate. The 12 targets used joint frequency and phase coding (frequencies: 9.25-14.75Hz with 0.5Hz intervals; phases: 0 to 5.5π with 0.5π intervals). Each trial began with a 1s cue (red square) followed by 4s of flickering stimulation. EEG was recorded from 8 occipital electrodes at 2048Hz and downsampled to 256Hz for analysis. Seven CCA-based methods were compared using leave-one-block-out cross-validation (14 blocks for training, 1 for testing). Performance was evaluated using classification accuracy and ITR.
+
+## References
+
+Masaki Nakanishi, Yijun Wang, Yu-Te Wang and Tzyy-Ping Jung, "A Comparison Study of Canonical Correlation Analysis Based Methods for Detecting Steady-State Visual Evoked Potentials," PLoS One, vol.10, no.10, e140703, 2015. `<http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140703>`_
+Appelhoff, S., Sanderson, M., Brooks, T., Vliet, M., Quentin, R., Holdgraf, C., Chaumon, M., Mikulan, E., Tavabi, K., Hochenberger, R., Welke, D., Brunner, C., Rockhill, A., Larson, E., Gramfort, A. and Jas, M. (2019). MNE-BIDS: Organizing electrophysiological data into the BIDS format and facilitating their analysis. Journal of Open Source Software 4: (1896). https://doi.org/10.21105/joss.01896
+
+Pernet, C. R., Appelhoff, S., Gorgolewski, K. J., Flandin, G., Phillips, C., Delorme, A., Oostenveld, R. (2019). EEG-BIDS, an extension to the brain imaging data structure for electroencephalography. Scientific Data, 6, 103. https://doi.org/10.1038/s41597-019-0104-8
+
+---
+Generated by MOABB 1.4.3 (Mother of All BCI Benchmarks)
+https://github.com/NeuroTechX/moabb

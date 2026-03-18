@@ -1,5 +1,5 @@
 {
-	"Name": "Nakanishi2015",
+	"Name": "SSVEP Nakanishi 2015 dataset",
 	"BIDSVersion": "1.9.0",
 	"HEDVersion": "8.4.0",
 	"DatasetType": "derivative",
@@ -26,7 +26,6 @@
 	"ReferencesAndLinks": [
 		"https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
 	],
-	"DatasetDOI": "doi:10.1371/journal.pone.0140703",
 	"GeneratedBy": [
 		{
 			"CodeURL": "https://github.com/NeuroTechX/moabb",
