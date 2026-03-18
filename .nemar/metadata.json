@@ -1,12 +1,48 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
+  "description": "A 12-class steady-state visual evoked potential (SSVEP) derivative dataset acquired from 9 healthy subjects using 8-channel EEG recorded at 256 Hz with joint frequency-phase modulation. This preprocessed dataset was derived from the original Nakanishi et al. 2015 study and contains bandpass-filtered (6-80 Hz) and downsampled data with a 135-ms latency delay applied to account for visual system delay. The dataset was used to benchmark canonical correlation analysis (CCA)-based methods for SSVEP detection in brain-computer interface applications, demonstrating that individual calibration data significantly improves classification performance compared to standard CCA approaches.",
+  "methods_description": "EEG data were acquired using a Biosemi ActiveTwo amplifier with 8 electrodes (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) in standard 10-20 montage at 256 Hz sampling rate from 9 healthy subjects. Subjects performed a 12-class SSVEP target identification task with visual stimuli flickering at frequencies ranging from 9.25 to 14.75 Hz (0.5 Hz resolution). Each trial lasted 4 seconds with a 1-second cue period. Data were preprocessed with zero-phase IIR bandpass filtering (6-80 Hz) and downsampling, with a 135-ms latency delay applied to account for visual system delay. This derivative dataset contains the preprocessed data from the original study.",
+  "license": "Unknown",
+  "dataset_type": "derivative",
   "authors": {
     "Masaki Nakanishi": {},
     "Yijun Wang": {},
     "Yu-Te Wang": {},
     "Tzyy-Ping Jung": {}
   },
+  "keywords": [
+    {
+      "term": "steady-state visual evoked potentials"
+    },
+    {
+      "term": "Brain-Computer Interfaces",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
+    },
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "canonical correlation analysis"
+    },
+    {
+      "term": "SSVEP"
+    },
+    {
+      "term": "BCI"
+    },
+    {
+      "term": "frequency-phase modulation"
+    },
+    {
+      "term": "preprocessing"
+    },
+    {
+      "term": "derivative dataset"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1371/journal.pone.0140703",
@@ -29,10 +65,10 @@
       "funder_name": "Swartz Foundation gift fund"
     },
     {
-      "funder_name": "Recruitment Program for Young Professionals"
+      "funder_name": "UC Proof of Concept Grant Award (269228)"
     },
     {
-      "funder_name": "Swartz Foundation"
+      "funder_name": "Recruitment Program for Young Professionals"
     },
     {
       "funder_name": "U.S. Office of Naval Research",
@@ -51,23 +87,21 @@
       "award_number": "USDI D11PC20183"
     },
     {
-      "funder_name": "University of California",
-      "award_number": "269228",
-      "award_title": "Proof of Concept Grant Award"
-    },
-    {
       "funder_name": "NIH",
       "award_number": "1R21EY025056-01"
+    },
+    {
+      "funder_name": "Swartz Foundation"
+    },
+    {
+      "funder_name": "University of California"
     }
   ],
-  "title": "SSVEP Nakanishi 2015 dataset",
-  "license": "Unknown",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
     "68.2 MB (11 files)"
   ],
@@ -80,33 +114,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "A 12-class steady-state visual evoked potential (SSVEP) dataset recorded from 9 healthy subjects using 8-channel EEG acquired at 256 Hz. This dataset was used to compare canonical correlation analysis (CCA)-based methods for SSVEP detection in brain-computer interface applications, demonstrating that individual calibration data significantly improves detection performance over standard CCA approaches.",
-  "methods_description": "EEG data were acquired using a Biosemi ActiveTwo system with 8 channels (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) at 256 Hz sampling rate. Subjects viewed a 4×3 matrix of flickering visual stimuli (6×6 cm each) at 60 cm viewing distance on a 1280×800 pixel monitor refreshed at 60 Hz. Each trial consisted of a 1-second cue period followed by 4 seconds of simultaneous stimulus flickering at frequencies ranging from 9.25 to 14.75 Hz with 0.5 Hz resolution. Data were preprocessed with zero-phase IIR bandpass filtering (6-80 Hz), with epochs extracted from 0.15 to 4.3 seconds to account for visual system latency.",
-  "keywords": [
-    {
-      "term": "SSVEP"
-    },
-    {
-      "term": "BCI"
-    },
-    {
-      "term": "brain-computer interface"
-    },
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "canonical correlation analysis"
-    },
-    {
-      "term": "visual evoked potentials"
-    },
-    {
-      "term": "steady-state visual evoked potentials"
-    },
-    {
-      "term": "signal classification"
-    }
-  ],
-  "source_hash": "09fef5484622de5415995a77dbbab6c8c9858a1f3cc30064ba04ff885f825b17"
+  "source_hash": "a918db115a07eb1581f3f67dcfa39de7c553ccf8ba1555d163bf288d1bea9259"
 }
