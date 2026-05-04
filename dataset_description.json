@@ -1,54 +1,56 @@
 {
-	"Name": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "Unknown",
-	"Authors": [
-		"Masaki Nakanishi",
-		"Yijun Wang",
-		"Yu-Te Wang",
-		"Tzyy-Ping Jung"
-	],
-	"Funding": [
-		"Swartz Foundation gift fund",
-		"U.S. Office of Naval Research (N00014-08-1215)",
-		"Army Research Office (W911NF-09-1-0510)",
-		"Army Research Laboratory (W911NF-10-2-0022)",
-		"DARPA (USDI D11PC20183)",
-		"UC Proof of Concept Grant Award (269228)",
-		"NIH Grant (1R21EY025056-01)",
-		"Recruitment Program for Young Professionals"
-	],
-	"EthicsApprovals": [
-		"Human Research Protections Program of the University of California San Diego"
-	],
-	"ReferencesAndLinks": [
-		"https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.4.3"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1371/journal.pone.0140703",
-			"URL": "https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
-		}
-	],
-	"Keywords": [
-		"SSVEP",
-		"BCI",
-		"CCA",
-		"canonical correlation analysis",
-		"brain-computer interface",
-		"steady-state visual evoked potentials"
-	],
-	"PublicationYear": 2015,
-	"ExperimentName": "Nakanishi2015",
-	"Description": "SSVEP Nakanishi 2015 dataset.\n\n\nDataset summary:\n\n#Subj      9\n#Chan      8\n#Classes     12\n#Trials / class     15\nTrials length 4.15 s\nFreq 256 Hz\n#Sessions      1\n\n\nParticipants:\n\n- Population: healthy\n- Age: 28 years\n- BCI experience: not specified\n\n\nEquipment:\n\n- Amplifier: Biosemi ActiveTwo\n- Electrodes: EEG\n- Montage: standard_1020\n- Reference: CMS/DRL\n\n\nPreprocessing:\n\n- Bandpass filter: 6-80 Hz\n- Steps: downsampling, bandpass filtering\n- Notes: Zero-phase forward and reverse IIR filtering was implemented using the filtfilt() function in MATLAB. Data epochs were extracted with a 135-ms latency delay considering the visual system delay.\n\n\nData Access:\n\n- DOI: 10.1371/journal.pone.0140703\n- Data URL: https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/\n- Repository: Github\n\n\nExperimental Protocol:\n\n- Paradigm: ssvep\n- Feedback: none\n- Stimulus: flickering\n\nThis dataset contains 12-class joint frequency-phase modulated steady-state\nvisual evoked potentials (SSVEPs) acquired from 10 subjects used to\nestimate an online performance of brain-computer interface (BCI) in the\nreference study [1]_.\n\nreferences\n----------\n\n.. [1] Masaki Nakanishi, Yijun Wang, Yu-Te Wang and Tzyy-Ping Jung,\n\"A Comparison Study of Canonical Correlation Analysis Based Methods for\nDetecting Steady-State Visual Evoked Potentials,\" PLoS One, vol.10, no.10,\ne140703, 2015.\n`<http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140703>`_"
+  "Name": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
+  "BIDSVersion": "1.9.0",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "Unknown",
+  "Authors": [
+    "Masaki Nakanishi",
+    "Yijun Wang",
+    "Yu-Te Wang",
+    "Tzyy-Ping Jung"
+  ],
+  "Funding": [
+    "Swartz Foundation gift fund",
+    "U.S. Office of Naval Research (N00014-08-1215)",
+    "Army Research Office (W911NF-09-1-0510)",
+    "Army Research Laboratory (W911NF-10-2-0022)",
+    "DARPA (USDI D11PC20183)",
+    "UC Proof of Concept Grant Award (269228)",
+    "NIH Grant (1R21EY025056-01)",
+    "Recruitment Program for Young Professionals"
+  ],
+  "EthicsApprovals": [
+    "Human Research Protections Program of the University of California San Diego"
+  ],
+  "ReferencesAndLinks": [
+    "https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.4.3"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1371/journal.pone.0140703",
+      "URL": "https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/"
+    }
+  ],
+  "Keywords": [
+    "SSVEP",
+    "BCI",
+    "CCA",
+    "canonical correlation analysis",
+    "brain-computer interface",
+    "steady-state visual evoked potentials"
+  ],
+  "PublicationYear": 2015,
+  "ExperimentName": "Nakanishi2015",
+  "Description": "SSVEP Nakanishi 2015 dataset.\n\n\nDataset summary:\n\n#Subj      9\n#Chan      8\n#Classes     12\n#Trials / class     15\nTrials length 4.15 s\nFreq 256 Hz\n#Sessions      1\n\n\nParticipants:\n\n- Population: healthy\n- Age: 28 years\n- BCI experience: not specified\n\n\nEquipment:\n\n- Amplifier: Biosemi ActiveTwo\n- Electrodes: EEG\n- Montage: standard_1020\n- Reference: CMS/DRL\n\n\nPreprocessing:\n\n- Bandpass filter: 6-80 Hz\n- Steps: downsampling, bandpass filtering\n- Notes: Zero-phase forward and reverse IIR filtering was implemented using the filtfilt() function in MATLAB. Data epochs were extracted with a 135-ms latency delay considering the visual system delay.\n\n\nData Access:\n\n- DOI: 10.1371/journal.pone.0140703\n- Data URL: https://github.com/mnakanishi/12JFPM_SSVEP/raw/master/data/\n- Repository: Github\n\n\nExperimental Protocol:\n\n- Paradigm: ssvep\n- Feedback: none\n- Stimulus: flickering\n\nThis dataset contains 12-class joint frequency-phase modulated steady-state\nvisual evoked potentials (SSVEPs) acquired from 10 subjects used to\nestimate an online performance of brain-computer interface (BCI) in the\nreference study [1]_.\n\nreferences\n----------\n\n.. [1] Masaki Nakanishi, Yijun Wang, Yu-Te Wang and Tzyy-Ping Jung,\n\"A Comparison Study of Canonical Correlation Analysis Based Methods for\nDetecting Steady-State Visual Evoked Potentials,\" PLoS One, vol.10, no.10,\ne140703, 2015.\n`<http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0140703>`_",
+  "DatasetDOI": "10.82901/nemar.nm000118",
+  "Version": "1.0.0"
 }
