@@ -1,0 +1,60 @@
+{
+ "dataset": "nm000118",
+ "moabb_class": "Nakanishi2015",
+ "moabb_version_used": "1.5.0",
+ "retrieved": "2026-08-11",
+ "retrieved_by": "moabb.datasets.Nakanishi2015.data_path()",
+ "upstream_cache_root": "/expanse/lustre/scratch/bpinto/temp_project/sourcedata_staging/mne_data/MNE-nakanishi-data/mnakanishi/12JFPM_SSVEP/raw/master/data",
+ "license": "Unknown",
+ "doi": "10.1371/journal.pone.0140703",
+ "naming": "upstream_filenames_restored",
+ "n_files": 9,
+ "total_bytes": 137623706,
+ "files": [
+  {
+   "file": "s1.mat",
+   "bytes": 15011521,
+   "sha256": "dea3eecb45cf9295e41b1eb1dfca0d63febf3537a0e35f5036aba5cde661c9e5"
+  },
+  {
+   "file": "s2.mat",
+   "bytes": 15013755,
+   "sha256": "d36e829c2e2d28f650ee424b0558db41f9db5236146700197395b01eef1bb4b4"
+  },
+  {
+   "file": "s3.mat",
+   "bytes": 15517919,
+   "sha256": "60be5572f58c83aba05312003847bcab9c3d7004f888ed74685d5b61c1aabf0d"
+  },
+  {
+   "file": "s4.mat",
+   "bytes": 14838183,
+   "sha256": "bbeaca8d516c9a958d4eac30211b771d30ead1404707744e77e226a08c45204e"
+  },
+  {
+   "file": "s5.mat",
+   "bytes": 16203531,
+   "sha256": "ae516f18fb3c40f953a3e46e338f0d28a4bcdc79e63b5ff688f46db16729e501"
+  },
+  {
+   "file": "s6.mat",
+   "bytes": 14869841,
+   "sha256": "647cd71eaac5085725024a65105fad1629c7c2bd8a478784999b767c5f40b589"
+  },
+  {
+   "file": "s7.mat",
+   "bytes": 14805617,
+   "sha256": "858e094341c9be47e133dcfdee3ecd4d216ee3de1812832115c7b231cfff0b64"
+  },
+  {
+   "file": "s8.mat",
+   "bytes": 15985195,
+   "sha256": "7a2ef2dfbedda89ec22a32b1f20083c9fd44ff6b2dfa298389985faf831f983f"
+  },
+  {
+   "file": "s9.mat",
+   "bytes": 15378144,
+   "sha256": "03349983da36e4c619a44998453db5bfb7ca067dbee63e7b98050558dcb23396"
+  }
+ ]
+}
