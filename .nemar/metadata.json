@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
-  "description": "This dataset comprises 12-class steady-state visual evoked potential (SSVEP) recordings acquired from 9 healthy subjects using 8-channel EEG with a Biosemi ActiveTwo amplifier. The study evaluated canonical correlation analysis (CCA)-based methods for SSVEP detection in brain-computer interface applications, comparing standard CCA, individual template-based CCA, and several extended CCA variants. Data were preprocessed with bandpass filtering (6-80 Hz) and downsampling to 256 Hz, with 180 trials per subject organized in 15 blocks of 12 trials each.",
-  "methods_description": "EEG data were acquired using a Biosemi ActiveTwo amplifier with 8 electrodes (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) positioned according to the standard 10-20 montage with CMS/DRL reference. Sampling rate was 256 Hz. Subjects performed a 12-class SSVEP target identification task with joint frequency-phase modulation (stimulus frequencies: 9.25-14.75 Hz in 0.5 Hz steps). Each trial consisted of a 1-second cue period followed by 4 seconds of flickering visual stimuli presented on a 4×3 matrix at 60 Hz refresh rate. Preprocessing included zero-phase IIR bandpass filtering (6-80 Hz), epoch extraction with 135-ms latency compensation for visual system delay, and downsampling to 256 Hz. A simulated online BCI experiment was conducted using leave-one-block-out cross-validation with 15 folds across 9 subjects.",
+  "description": "This dataset comprises 12-class steady-state visual evoked potential (SSVEP) recordings acquired from 10 healthy subjects using 8 EEG channels during a brain-computer interface task. The study compared canonical correlation analysis (CCA)-based methods for SSVEP detection. Data were preprocessed with bandpass filtering (6-80 Hz) and downsampled to 256 Hz, with 180 trials per subject organized in 15 blocks of 12 trials each.",
+  "methods_description": "EEG data were acquired using a Biosemi ActiveTwo amplifier with 8 electrodes (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) positioned according to the standard 10-20 montage with CMS/DRL reference. Sampling rate was 256 Hz. Subjects performed a 12-class SSVEP target identification task with joint frequency-phase modulation (9.25-14.75 Hz range, 0.5 Hz resolution). Each trial consisted of a 1-second cue period followed by 4 seconds of flickering visual stimuli presented on a 4×3 matrix at 60 Hz refresh rate. Preprocessing included zero-phase IIR bandpass filtering (6-80 Hz) and epoch extraction with 135-ms latency compensation for visual system delay.",
   "license": "Unknown",
   "dataset_type": "derivative",
   "authors": {
@@ -14,7 +14,10 @@
   },
   "keywords": [
     {
-      "term": "SSVEP"
+      "term": "SSVEP",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013181"
     },
     {
       "term": "Brain-Computer Interfaces",
@@ -23,16 +26,28 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
     },
     {
-      "term": "EEG"
+      "term": "EEG",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
-      "term": "canonical correlation analysis"
+      "term": "canonical correlation analysis",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D003627"
     },
     {
-      "term": "steady-state visual evoked potentials"
+      "term": "steady-state visual evoked potentials",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D013181"
     },
     {
-      "term": "visual stimulation"
+      "term": "visual stimulation",
+      "subject_scheme": "MeSH",
+      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D010775"
     },
     {
       "term": "joint frequency-phase modulation"
@@ -90,6 +105,10 @@
     {
       "funder_name": "NIH",
       "award_number": "1R21EY025056-01"
+    },
+    {
+      "funder_name": "DARPA",
+      "award_number": "D11PC20183"
     }
   ],
   "resource_type_general": "Dataset",
@@ -110,5 +129,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "8474330cea8b252968d31f5241d932b83ad42360a815552369ffda9ca49716e9"
+  "source_hash": "9f469edfa7eddf1aab9a4232d350ad79515e3987de34f36ef85177f944f27379"
 }
