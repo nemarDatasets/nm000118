@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
-  "description": "This dataset comprises 12-class steady-state visual evoked potential (SSVEP) recordings acquired from 10 healthy subjects using 8 EEG channels during a brain-computer interface task. The study compared canonical correlation analysis (CCA)-based methods for SSVEP detection. Data were preprocessed with bandpass filtering (6-80 Hz) and downsampled to 256 Hz, with 180 trials per subject organized in 15 blocks of 12 trials each.",
-  "methods_description": "EEG data were acquired using a Biosemi ActiveTwo amplifier with 8 electrodes (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) positioned according to the standard 10-20 montage with CMS/DRL reference. Sampling rate was 256 Hz. Subjects performed a 12-class SSVEP target identification task with joint frequency-phase modulation (9.25-14.75 Hz range, 0.5 Hz resolution). Each trial consisted of a 1-second cue period followed by 4 seconds of flickering visual stimuli presented on a 4×3 matrix at 60 Hz refresh rate. Preprocessing included zero-phase IIR bandpass filtering (6-80 Hz) and epoch extraction with 135-ms latency compensation for visual system delay.",
+  "description": "A 12-class steady-state visual evoked potential (SSVEP) EEG dataset using joint frequency-phase modulation, recorded from healthy participants during a simulated online brain-computer interface experiment. Eight occipital and parieto-occipital channels were recorded at 256 Hz while subjects gazed at flickering targets on a 4x3 virtual keypad. The data were originally used to compare canonical correlation analysis (CCA) based SSVEP detection methods.",
+  "methods_description": "EEG was recorded with a Biosemi ActiveTwo amplifier from 8 channels (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) with CMS/DRL reference. Subjects gazed at one of 12 flickering targets (9.25-14.75 Hz, 0.5 Hz spacing) for 4 s per trial, over 15 blocks of 12 trials. Stimuli were presented in MATLAB with Psychophysics Toolbox on a 60 Hz LCD monitor. Data were downsampled to 256 Hz and bandpass filtered at 6-80 Hz with zero-phase IIR filtering, and epochs were extracted with a 135 ms latency delay.",
   "license": "Unknown",
   "dataset_type": "derivative",
   "authors": {
@@ -14,43 +14,27 @@
   },
   "keywords": [
     {
-      "term": "SSVEP",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013181"
+      "term": "EEG"
+    },
+    {
+      "term": "SSVEP"
+    },
+    {
+      "term": "steady-state visual evoked potentials"
+    },
+    {
+      "term": "brain-computer interface"
+    },
+    {
+      "term": "canonical correlation analysis"
+    },
+    {
+      "term": "frequency-phase coding"
     },
     {
       "term": "Brain-Computer Interfaces",
       "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
       "value_uri": "http://id.nlm.nih.gov/mesh/D062207"
-    },
-    {
-      "term": "EEG",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
-    },
-    {
-      "term": "canonical correlation analysis",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D003627"
-    },
-    {
-      "term": "steady-state visual evoked potentials",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D013181"
-    },
-    {
-      "term": "visual stimulation",
-      "subject_scheme": "MeSH",
-      "scheme_uri": "https://id.nlm.nih.gov/mesh/",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D010775"
-    },
-    {
-      "term": "joint frequency-phase modulation"
     }
   ],
   "related_identifiers": [
@@ -79,7 +63,7 @@
     },
     {
       "funder_name": "Swartz Foundation",
-      "award_title": "gift fund"
+      "award_title": "Gift fund"
     },
     {
       "funder_name": "U.S. Office of Naval Research",
@@ -98,17 +82,12 @@
       "award_number": "USDI D11PC20183"
     },
     {
-      "funder_name": "University of California",
-      "award_number": "269228",
-      "award_title": "Proof of Concept Grant Award"
+      "funder_name": "UC Proof of Concept Grant",
+      "award_number": "269228"
     },
     {
       "funder_name": "NIH",
       "award_number": "1R21EY025056-01"
-    },
-    {
-      "funder_name": "DARPA",
-      "award_number": "D11PC20183"
     }
   ],
   "resource_type_general": "Dataset",
@@ -117,7 +96,7 @@
     "eeg"
   ],
   "sizes": [
-    "205.9 MB (20 files)"
+    "196 MB (20 files)"
   ],
   "formats": [
     ".html",
