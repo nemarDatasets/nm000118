@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "Nakanishi2015 – SSVEP Nakanishi 2015 dataset",
-  "description": "A 12-class steady-state visual evoked potential (SSVEP) EEG dataset using joint frequency-phase modulation, recorded from healthy participants during a simulated online brain-computer interface experiment. Eight occipital and parieto-occipital channels were recorded at 256 Hz while subjects gazed at flickering targets on a 4x3 virtual keypad. The data were originally used to compare canonical correlation analysis (CCA) based SSVEP detection methods.",
-  "methods_description": "EEG was recorded with a Biosemi ActiveTwo amplifier from 8 channels (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) with CMS/DRL reference. Subjects gazed at one of 12 flickering targets (9.25-14.75 Hz, 0.5 Hz spacing) for 4 s per trial, over 15 blocks of 12 trials. Stimuli were presented in MATLAB with Psychophysics Toolbox on a 60 Hz LCD monitor. Data were downsampled to 256 Hz and bandpass filtered at 6-80 Hz with zero-phase IIR filtering, and epochs were extracted with a 135 ms latency delay.",
+  "description": "A 12-class steady-state visual evoked potential (SSVEP) EEG dataset using joint frequency-phase modulation, recorded from 9 healthy participants (the original study reports 10) in a simulated online brain-computer interface experiment. Eight occipital and parieto-occipital channels were recorded at 256 Hz while participants gazed at flickering targets on a 4x3 virtual keypad. The data were originally used to compare canonical correlation analysis (CCA) based methods for SSVEP detection.",
+  "methods_description": "EEG was recorded with a Biosemi ActiveTwo amplifier from 8 channels (PO7, PO3, POz, PO4, PO8, O1, Oz, O2) with CMS/DRL reference. Each of 15 blocks contained 12 trials, one per stimulus frequency from 9.25 to 14.75 Hz. A red square cued the target for 1 s, then all stimuli flickered for 4 s on a 60 Hz LCD monitor. Data were downsampled to 256 Hz and bandpass filtered at 6-80 Hz with zero-phase IIR filtering, and epochs were extracted with a 135 ms delay to allow for visual latency.",
   "license": "Unknown",
   "dataset_type": "derivative",
   "authors": {
@@ -29,7 +29,9 @@
       "term": "canonical correlation analysis"
     },
     {
-      "term": "frequency-phase coding"
+      "term": "Evoked Potentials, Visual",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D005074"
     },
     {
       "term": "Brain-Computer Interfaces",
@@ -62,8 +64,7 @@
       "funder_name": "Recruitment Program for Young Professionals"
     },
     {
-      "funder_name": "Swartz Foundation",
-      "award_title": "Gift fund"
+      "funder_name": "Swartz Foundation"
     },
     {
       "funder_name": "U.S. Office of Naval Research",
@@ -108,5 +109,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "9f469edfa7eddf1aab9a4232d350ad79515e3987de34f36ef85177f944f27379"
+  "source_hash": "010f201250ed26f8f8b19507baa101205be0bfa6f5339fe87d98a5903f706005"
 }
